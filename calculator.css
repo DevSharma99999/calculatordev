@@ -1,0 +1,41 @@
+.char,
+.num {
+    height: 60px;
+    width: 60px;
+    background-color:red;
+    font-size: 25px;
+}
+.char:active,
+.num:active {
+    background-color: rgb(88, 30, 30);
+}
+html{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, black,slategrey);
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 3px solid black;
+}
+#display{
+    position: fixed;
+    top:80px;
+    border:5px solid black;
+    color:aliceblue;
+    background-color: rgb(55, 38, 38);
+    height: 25px;
+    border-radius: 5%;
+}
+#copyright{
+    position: fixed;
+    bottom: 10px;
+}
